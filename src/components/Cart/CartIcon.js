@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 
 const CartIcon=()=>{
    return <svg
