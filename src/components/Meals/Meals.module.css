@@ -1,0 +1,10 @@
+.mealsection{
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 60rem;
+    width: 90%;
+    border-radius: 14px;
+    padding: 1rem;
+}
