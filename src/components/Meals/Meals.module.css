@@ -8,3 +8,15 @@
     border-radius: 14px;
     padding: 1rem;
 }
+.section{
+    padding: 10px;
+    /* display: flex; */
+}
+.amount{
+   text-align: right;
+   margin-left: auto;
+
+}
+.box{
+    display: flex;
+}
