@@ -29,23 +29,23 @@ const Meals = () => {
     ];
     const List = MealsList.map((meal) =>
         <>
-        <section className={classes.box}>
-            <div className={classes.section}>
-                <strong>{meal.name}</strong>
-                <div>{meal.description}</div>
-                <strong style={{ color: "#8a2b06" }}>{meal.price}</strong>
-            </div>
-            <div className={classes.amount}>
-                <form>
-                    <div>
-                    <strong>Amount</strong>
-                    <input type="number" defaultValue={1} />
-                    </div>
-                    <button>+ Add</button>
-                </form>
-            </div>
-        </section>
-        <hr></hr>
+            <section className={classes.box}>
+                <div className={classes.section}>
+                    <strong>{meal.name}</strong>
+                    <div>{meal.description}</div>
+                    <strong style={{ color: "#8a2b06" }}>{meal.price}</strong>
+                </div>
+                <div className={classes.amount}>
+                    <form>
+                        <div className={classes.label}>
+                            <strong>Amount</strong>
+                            <input type="number" defaultValue={1} />
+                        </div>
+                        <button type="button" className={classes.button}>+ Add</button>
+                    </form>
+                </div>
+            </section>
+            <hr></hr>
         </>)
     return <div className={classes.mealsection}>
         {List}
