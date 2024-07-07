@@ -1,5 +1,6 @@
 
 import classes from "./Meals.module.css";
+
 const Meals = () => {
     const MealsList = [
         {
@@ -27,8 +28,12 @@ const Meals = () => {
             price: "$18.99",
         },
     ];
+    const SubmitHandler = (event) => {
+        event.preventDefault();
+        
+    }
     const List = MealsList.map((meal) =>
-        <>
+        <div id={meal.id}>
             <section className={classes.box}>
                 <div className={classes.section}>
                     <strong>{meal.name}</strong>
@@ -36,17 +41,17 @@ const Meals = () => {
                     <strong style={{ color: "#8a2b06" }}>{meal.price}</strong>
                 </div>
                 <div className={classes.amount}>
-                    <form>
+                    <form onSubmit={SubmitHandler} data={meal}>
                         <div className={classes.label}>
                             <strong>Amount</strong>
-                            <input type="number" defaultValue={1} />
+                            <input type="number" defaultValue={0} name="noofItems"/>
                         </div>
-                        <button type="button" className={classes.button}>+ Add</button>
+                        <button type="submit" className={classes.button}>+ Add</button>
                     </form>
                 </div>
             </section>
             <hr></hr>
-        </>)
+        </div>)
     return <div className={classes.mealsection}>
         {List}
     </div>
