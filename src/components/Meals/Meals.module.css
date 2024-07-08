@@ -12,28 +12,6 @@
 .section{
     padding: 10px;
 }
-.amount{
-   text-align: right;
-   margin-left: auto;
-   justify-content: space-between;
-
-}
 .box{
     display: flex;
-}
-.button{
-    background-color:#7c3217;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem 2rem;
-    margin-top: 10px;
-    border-radius: 25px;
-}
-.label input{
-    width: 3rem;
-    font: inherit;
-    padding-left: 0.5rem;
-}
-.label strong{
-    margin-right: 10px;
 }
